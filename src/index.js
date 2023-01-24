@@ -14,6 +14,8 @@ const DEBOUNCE_DELAY = 300;
 
 function onSearch(e) {
   const name = e.target.value.trim();
+  clearCountryList();
+  clearCountryInfo();
 
   if (!name) {
     clearCountryList();
